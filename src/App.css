@@ -1,31 +1,95 @@
-.App {
-  text-align: center;
+/* App.css */
+
+.event-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.event-title {
+  font-size: 20px;
+  margin-bottom: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.event-date {
+  font-size: 14px;
+  color: #666;
+}
+
+
+/* App.css */
+
+.container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  width: 45%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 
-.heart {
-  color: #ff0000;
+.card + .card {
+  margin-top: 20px; /* Rovnoměrný odstup mezi kartami */
 }
 
-.small {
-  font-size: 0.75rem;
+.card h2 {
+  margin-bottom: 15px;
 }
+
+.form-container {
+  margin-top: 15px; /* Odstup mezi názvem karty a formulářem */
+}
+
+.form-input {
+  margin-bottom: 20px; /* Vertikální mezera mezi jednotlivými poli formuláře */
+}
+
+.form-input input,
+.form-input textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.form-input input[type="date"],
+.form-input input[type="time"] {
+  width: calc(100% - 20px);
+}
+
+.form-input textarea {
+  height: 100px; /* Výška textového pole */
+}
+
+.form-input button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-input button:hover {
+  background-color: #0056b3;
+}
+.event-card button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #dc3545; /* Červená barva */
+  color: #fff;
+  cursor: pointer;
+}
+
+.event-card button:hover {
+  background-color: #c82333; /* Tmavší červená barva při najetí myší */}
